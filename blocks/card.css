@@ -1,8 +1,8 @@
-.cards {
+.card {
   margin-top: 30px;
 }
 
-.cards__list {
+.card__list {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, 282px);
@@ -11,40 +11,51 @@
   margin: 0;
 }
 
-.card {
+.card__item {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
+  overflow: hidden;
   list-style-type: none;
-  height: 361px;
   width: 282px;
 }
 
 .card__image {
-  width: 282px;
   height: 282px;
 }
 
-.card__title {
+.card__content {
   display: flex;
-  max-width: 220px;
-  font-weight: 900;
-  line-height: 29px;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 282px;
+  background-color: white;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  background-color: white;
   color: black;
-  padding: 25px 69px 25px 20px;
-  align-items: center;
-  justify-content: space-between;
-  height: 29px;
-  width: 193px;
+  padding: 2px 20px 2px 20px;
   margin: 0;
 }
 
+.card__title {
+  font-weight: 900;
+  line-height: 29px;
+  white-space: nowrap;
+  color: black;
+}
+
 .card__like-button {
-  background: center transparent url(../images/Vector-1.svg) no-repeat;
+  background: center transparent url(../images/Vector-inactive.svg) no-repeat;
+  background-size: contain;
   width: 21px;
   height: 18px;
+  border: 0;
+  transition: background-color 0.5s;
+  cursor: pointer;
+}
+
+.card__like-button:hover {
+  background: center transparent url(../images/Vector-active.svg) no-repeat;
+  background-color: rgb(174, 47, 47);
 }
