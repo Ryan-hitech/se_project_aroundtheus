@@ -10,3 +10,11 @@
   height: 33px;
   object-fit: cover;
 }
+
+@media screen and (max-width: 580px) {
+  .header__logo {
+    max-width: 126px;
+    height: 24px;
+    object-fit: cover;
+  }
+}
