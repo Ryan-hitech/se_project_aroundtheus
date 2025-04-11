@@ -4,9 +4,7 @@
 }
 
 .footer__copyright {
-  padding: 67px 10px 60px 10px;
-  padding-top: 67px;
-  padding-bottom: 60px;
+  padding: 67px 0 60px;
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
@@ -14,9 +12,14 @@
   margin: 0;
 }
 
+@media screen and (max-width: 905px) {
+  .footer__copyright {
+    padding-left: 19px;
+  }
+}
+
 @media screen and (max-width: 580px) {
   .footer__copyright {
     font-size: 14px;
-    padding-left: 19px;
   }
 }
