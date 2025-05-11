@@ -1,28 +1,29 @@
 const initialCards = [
   {
-    name: "The Everest",
-    link: "file:///Users/ryanfarhoud/Desktop/se_project_aroundtheus/images/everest.jpg",
+    name: "Yosemite Valley",
+    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/yosemite.jpg",
   },
   {
-    name: "Altai Republic",
-    link: "file:///Users/ryanfarhoud/Desktop/se_project_aroundtheus/images/altai_republic.jpg",
+    name: "Lake Louise",
+    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/lake-louise.jpg",
   },
   {
-    name: "The Amazon",
-    link: "file:///Users/ryanfarhoud/Desktop/se_project_aroundtheus/images/amazon.jpg",
+    name: "Bald Mountains",
+    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/bald-mountains.jpg",
   },
   {
-    name: "Fuji Mountain",
-    link: "file:///Users/ryanfarhoud/Desktop/se_project_aroundtheus/images/fuji_mountain.jpg",
+    name: "Latemar",
+    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/latemar.jpg",
   },
   {
-    name: "Easter Island Heads",
-    link: "file:///Users/ryanfarhoud/Desktop/se_project_aroundtheus/images/moai.jpg",
+    name: "Vanoise National Park",
+    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/vanoise.jpg",
   },
   {
-    name: "The Pyramids Of Giza",
-    link: "file:///Users/ryanfarhoud/Desktop/se_project_aroundtheus/images/pyramids_of_giza.jpg",
+    name: "Lago di Braies",
+    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/lago.jpg",
   },
 ];
 
 console.log(initialCards);
+
