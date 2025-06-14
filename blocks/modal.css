@@ -23,7 +23,7 @@
   width: 430px;
 }
 
-.modal__close {
+.modal__close-button {
   position: absolute;
   background: url(../images/close_icon.svg);
   background-size: contain;
@@ -39,7 +39,7 @@
   transition: opacity 0.5s;
 }
 
-.modal__close:hover {
+.modal__close-button:hover {
   opacity: 60%;
 }
 
@@ -64,6 +64,7 @@
   box-sizing: border-box;
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 13px;
   margin-bottom: 29px;
 }
 
@@ -71,10 +72,11 @@
   box-sizing: border-box;
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 13px;
   margin-bottom: 48px;
 }
 
-.modal__button {
+.modal__submit-button {
   background-color: black;
   color: white;
   width: 358px;
@@ -90,7 +92,7 @@
   transition: opacity 0.5s;
 }
 
-.modal__button:hover {
+.modal__submit-button:hover {
   opacity: 80%;
 }
 
@@ -101,7 +103,7 @@
     padding: 25px 22px;
   }
 
-  .modal__close {
+  .modal__close-button {
     right: 0;
     max-width: 26px;
     height: 26px;
@@ -117,7 +119,7 @@
     padding: 0 22px;
   }
 
-  .modal__button {
+  .modal__submit-button {
     color: white;
     background-color: black;
     max-width: 238px;
