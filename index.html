@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="pages/index.css" rel="stylesheet" />
+    <title>Around The U.S</title>
+  </head>
+  <body class="page">
+    <div class="page__content">
+      <header class="header page__section">
+        <img
+          src="images/logo.svg"
+          alt="around the u.s. logo"
+          class="header__logo"
+        />
+      </header>
+      <main class="content">
+        <section class="profile page__section">
+          <img
+            class="profile__image"
+            src="images/Avatar.jpg"
+            alt="Jacques Cousteau avatar"
+          />
+          <div class="profile__info">
+            <h1 class="profile__title" id="profile-title">Jacques Cousteau</h1>
+            <button
+              type="button"
+              class="profile__edit-button"
+              id="profile-edit-button"
+            ></button>
+            <p class="profile__description" id="profile-description">
+              Explorer
+            </p>
+          </div>
+          <button type="button" class="profile__add-button"></button>
+        </section>
+        <div class="card page__section">
+          <ul class="card__list"></ul>
+        </div>
+      </main>
+      <footer class="footer page__section">
+        <p class="footer__copyright">&copy; 2022 Around The U.S.</p>
+      </footer>
+    </div>
+    <div class="modal" id="profile-edit-modal">
+      <div class="modal__container">
+        <button type="button" class="modal__close-button"></button>
+        <form class="modal__form" id="modal-form">
+          <h2 class="modal__heading">Edit profile</h2>
+          <label for="profile-title-input">Name</label>
+          <input
+            type="text"
+            id="profile-title-input"
+            name="title"
+            placeholder="Name"
+            class="modal__title"
+            value=""
+          />
+          <label for="profile-description-input">Description</label>
+          <input
+            type="text"
+            id="profile-description-input"
+            name="description"
+            placeholder="Description"
+            class="modal__description"
+            value=""
+          />
+          <button type="submit" class="modal__submit-button">Save</button>
+        </form>
+      </div>
+    </div>
+    <template id="card-template">
+      <li class="card__item">
+        <img
+          src="https://via.placeholder.com/150"
+          alt="placeholder"
+          class="card__image"
+        />
+        <div class="card__content">
+          <h2 class="card__title"></h2>
+          <button type="button" class="card__like-button"></button>
+        </div>
+      </li>
+    </template>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
